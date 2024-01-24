@@ -35,6 +35,15 @@ const SearchResult = ({
     };
   }, [searchText]);
 
+  const handleKeyDown = (
+    event: React.KeyboardEvent<HTMLLIElement>,
+    option: Option
+  ) => {
+    if (event.key === "Enter") {
+      onSelection(option);
+    }
+  };
+
   if (searchText.length <= 1 || isOptionSelected) return null;
 
   return (
@@ -49,6 +58,7 @@ const SearchResult = ({
           role="menuitem"
           tabIndex={0}
           onClick={() => onSelection(option)}
+          onKeyDown={(event) => handleKeyDown(event, option)}
         >
           <ListItem title={option.title} searchText={searchText} />
         </li>
