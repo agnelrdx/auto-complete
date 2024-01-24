@@ -51,13 +51,13 @@ Ans: Below are the few things we do to migrate a class component to function com
 
 ### 10. List a few ways styles can be used with components.
 
-    Ans: Below are the few ways we can apply styles to our components.
+Ans: Below are the few ways we can apply styles to our components.
 
-    - Use inline styles. We can define them as objects and pass it to the style prop.
-    - Use a regular stylesheet and apply styles using classnames or id. We can also use css modules so that the styles are contained to a particular component.
-    - CSS in JS using libraries like styled components, MUI etc.
+- Use inline styles. We can define them as objects and pass it to the style prop.
+- Use a regular stylesheet and apply styles using classnames or id. We can also use css modules so that the styles are contained to a particular component.
+- CSS in JS using libraries like styled components, MUI etc.
 
 ### 11. How to render an HTML string coming from the server.
 
-    Ans: We can use dangerouslySetInnerHTML to render HTML directly through a component. Below is the code snippet.
-    `<div dangerouslySetInnerHTML={{ __html: htmlString }} />`
+Ans: We can use dangerouslySetInnerHTML to render HTML directly through a component. Below is the code snippet.
+`<div dangerouslySetInnerHTML={{ __html: htmlString }} />`
